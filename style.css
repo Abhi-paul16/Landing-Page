@@ -1,0 +1,361 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: hsl(218, 28%, 13%);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+    background-image: url(bg-curvy-desktop.svg);
+}
+    
+/* navbar */
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style-type: none;
+    font-weight: lighter;
+    margin: 40px;
+}
+li{
+    text-decoration-style: none;
+}
+.nav-bar{
+    display: flex;
+   align-items: center;   
+}
+.nav-bar li{
+    margin: 0 50px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* intro */
+
+.intro-image{
+    display: block;
+   margin: auto;
+}
+.sec-1{
+    width: 40%;
+    margin: auto ;
+    text-align: center;
+    color: white;
+}
+.sec-1 h2{
+    line-height: 1.4;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.sec-1 p{
+    width: 80%;
+    margin: 20px auto;
+    line-height: 1.2;
+}
+.btn-1{
+ 
+    background: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+    width: 180px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+/* cards */
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    text-align: center;
+    color: white;
+    width: 60%;
+    margin: 125px auto 0;
+}
+.cards h2{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.cards p{
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 200;
+}
+.card-hover:hover{
+    transition: 2s;
+    transform: scale(1.2);
+}
+
+/* productive bar */
+
+.sec-3{
+    display: flex;
+    color: white;
+    margin: 100px;
+    
+}
+.productive-bar{
+    display: inline-block;
+    width: 35%;
+    line-height: 1.5;
+    margin: 100px 50px;
+}
+.productive-bar h2{
+    font-size: 37px;
+    font-weight: 700;
+}
+.productive-bar p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+.productive-bar a{
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+}
+hr{
+    width: 38%;
+    color: linear-gradient(to right, rgb(101, 226, 217), rgb(51, 158, 204));
+    margin: 5px 0;
+    border: 0.5px solid;
+    border-radius: 5px;
+}
+
+.sec-4{
+    color: white;
+    background-image: url(bg-quotes.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 350px;
+
+}
+.testimonial{
+width: 25%;
+padding: 35px;
+background-color: hsl(219, 30%, 18%);
+margin: 10px;
+border-radius: 10px;
+box-shadow:  0px 0px 14px 1px hsla(220, 18%, 10%, 0.692);
+}
+.testimonial p{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.testimonial img{
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+}
+.testimonial h2{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.mail-card{
+    width: 50%;
+    color: white;
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 5px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 2rem;
+    position: absolute;
+    left: 25%;
+    top: 2450px;
+}
+.mail-card h2{
+    font-weight: 700;
+    font-size: 37px;
+    margin: 10px  ;
+}
+.mail-card p{
+    margin: 10px 0;
+    font-weight: lighter;
+}
+.mail{
+    height: 2.5rem;
+    border-radius: 25px;
+width: 350px;
+margin: 40px;
+}
+.mail-btn{
+    border-radius: 25px;
+    width: 150px;
+    height: 2.5rem;
+    background-color: hsl(176, 68%, 64%);
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    
+}
+input[value="email@example.com"] {
+    padding-left: 20px;
+    color: #a89f9f;
+}
+
+footer{
+    color: white;
+    background-color: hsl(216, 53%, 9%);
+    width: 100%;
+    height: 400px;
+}
+.logo{
+    display: inline;
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+.container{
+    height: 300px;
+  display: flex;
+  justify-content: space-around;
+    align-items: center;
+    line-height: 2;
+}
+ul{
+    list-style-type: none;
+}
+.about-us{
+    width: 25%;
+}
+.contact-us p{
+    margin-bottom: 20px;
+}
+.contact-us img{
+    margin-right: 20px;
+}
+.twitter{
+    margin:0 20px 0 20px;
+}
+i:hover{
+    color: tomato;
+}
+
+/* responsive */
+/* ipad */
+@media only screen and (max-width:768px){
+    body{
+        background-image: url(bg-curvy-mobile.svg);
+    }
+    .nav-bar li{
+        margin: 0 10px;
+    }
+    .sec-3{
+        margin: 50px;
+    }
+    .productive-illus{
+        width: 50%;
+        height: 80%;
+    }
+    .productive-bar{
+        margin: 50px;
+    }
+    .productive-bar h2{
+        font-size: 20px;
+    }
+    .testimonial {
+        width: 35%;
+        padding: 15px;
+    }   
+    .mail{
+        width: 250px;
+    }   
+    footer{
+        margin-top: 400px;
+    } 
+    .container {
+        height: 400px;}
+}
+
+
+/* Smartphone */
+@media only screen and (max-width:414px){
+.intro-image{
+    width: 50%;
+}
+.nav-logo{
+    width: 60%;
+}
+.nav-bar{
+    width: 90%;
+}
+.sec-1{
+    width: 100%;
+}
+.cards{
+    display: block;
+    width: 80%;
+    margin: 60px auto 0;
+}
+.card-hover:hover{
+    color: aqua;
+    transition: 2s;
+    transform: scale(0.8);
+}
+.sec-3{
+    display: block;
+}
+.productive-illus{
+    width: 100%;
+}
+.productive-bar{
+    width: 80%;
+}
+.sec-4{
+    display: block;
+}
+.testimonial {
+    width: 70%;
+    padding: 15px;
+    margin: 20px auto;
+}
+footer{
+    height: 620px;
+}
+.mail-card{
+    width: 100%;
+    left: 0%;
+    top: 2601px;
+}
+.container{
+    display: block;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+.about-us{
+    width: 100%;
+
+}
+.icons{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.contact-us{
+    margin-top:10px;
+}
+.list{
+    margin-bottom: 10px;
+}
+.logo{
+    top: 13%;
+}
+}
